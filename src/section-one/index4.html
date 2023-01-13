@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- REACT LIBRARY-->
+    <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+    <!-- REACT DOM LIBRARY-->
+    <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+    <!-- BABEL LIBRARY-->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>Let's React</title>
+</head>
+<body>
+<div id ="app">React has not rendered yet</div>
+<div id ="apple">Apple has not rendered yet</div>
+<script type="text/babel">
+    ReactDOM.render(
+        /*#__PURE__*/
+//REACT WHAT
+        React.createElement("div", null, /*#__PURE__*/React.createElement("h1", null, "Hello 786"), /*#__PURE__*/React.createElement("h2", null, "Hello Faiz"), /*#__PURE__*/React.createElement("p", null, "This is a paragraph!"), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, "GET UP"), /*#__PURE__*/React.createElement("li", null, "GO TO EXERCISE"), /*#__PURE__*/React.createElement("li", null, "GO TO WORK"))),
+//REACT WHERE
+        document.getElementById("app"));
+
+    ReactDOM.render(
+        //REACT WHAT
+        <div>
+            <h1>Shona</h1>
+            <h2>babu</h2>
+            <p>This is a paragraph!</p>
+            <ul>
+                <li>GET UP</li>
+                <li>GO TO party</li>
+                <li>GO TO house</li>
+            </ul>
+        </div>,
+        //REACT WHERE
+        document.getElementById("apple")
+    );
+</script>
+
+
+</body>
+</html>
